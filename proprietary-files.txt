@@ -41,3 +41,9 @@ vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:product/v
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:product/vendor_overlay/30/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:product/vendor_overlay/30/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:product/vendor_overlay/30/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+
+# Kernel Power Off Charging (KPOC)
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib64/libshowlogo.so
+lib64/libsysenv_system.so
