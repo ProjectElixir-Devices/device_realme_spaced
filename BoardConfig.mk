@@ -74,7 +74,7 @@ BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 TARGET_KERNEL_CONFIG := spaced_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/spaced
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r383902
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r383902
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

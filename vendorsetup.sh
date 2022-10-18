@@ -1,11 +1,11 @@
 # Vendor tree
 VT=vendor/realme/spaced/spaced-vendor.mk
-if ! [ -a $VT ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_spaced vendor/realme/spaced
+if ! [ -a $VT ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_spaced vendor/realme/spaced --depth=1
 fi
 
 # Vendor-ims tree
 VT_IMS=vendor/realme/ims-spaced/mtk-ims.mk
-if ! [ -a $VT_IMS ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_ims-spaced vendor/realme/ims-spaced
+if ! [ -a $VT_IMS ]; then git clone https://github.com/drtsinx98/proprietary_vendor_realme_ims-spaced vendor/realme/ims-spaced --depth=1
 fi
 
 # Kernel tree
@@ -24,3 +24,6 @@ cd packages/modules/Bluetooth
 BRANCH_BT="$(git rev-parse --abbrev-ref HEAD)"
 if ! [ "$BRANCH_BT" != "13-sysbta" ]; then cd ../../.. && git clone --depth=1 https://github.com/rk134/packages_modules_Bluetooth.git packages/modules/Bluetooth
 fi
+
+# Clang 11
+git clone https://github.com/DrtSinX98/android_prebuilts_clang_host_linux-x86_clang-6443078 prebuilts/clang/host/linux-x86/clang-r383902 --depth=1
