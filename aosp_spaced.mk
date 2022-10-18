@@ -25,9 +25,12 @@ $(call inherit-product, device/realme/spaced/device.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Build configuration
+IS_PHONE := true
+TARGET_SUPPORT_QUICK_TAP := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := UNOFFICIAL
+ELIXIR_BUILD_TYPE := OFFICIAL
+ELIXIR_MAINTAINER := rk134 (rahul k)
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
