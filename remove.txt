@@ -3,3 +3,4 @@ vendor/realme
 kernel/realme
 frameworks/av
 packages/modules/Bluetooth
+prebuilts/clang/host/linux-x86/clang-r383902
