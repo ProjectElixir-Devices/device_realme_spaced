@@ -1,5 +1,5 @@
 # Vendor tree
-git clone https://github.com/drtsinx98/proprietary_vendor_realme_spaced vendor/realme/spaced --depth=1
+git clone https://github.com/realme-spaced-dev/vendor_realme_spaced vendor/realme/spaced -b wip --depth=1
 
 
 # Vendor-ims tree
